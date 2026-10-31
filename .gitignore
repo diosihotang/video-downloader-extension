@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# local automation (course crawl data, staging files, browser profile with history/logins)
+automation/
+
+# test output
+coverage/
+
+# environment and logs
+.env
+.env.*
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

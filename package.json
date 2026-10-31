@@ -1,0 +1,40 @@
+{
+  "name": "video-downloader-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for detecting and downloading videos from any website — inspired by yt-dlp and Video DownloadHelper.",
+  "main": "background.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "projects": [
+      {
+        "displayName": "node",
+        "testEnvironment": "node",
+        "testMatch": [
+          "<rootDir>/tests/detector.test.js",
+          "<rootDir>/tests/mediaStore.test.js",
+          "<rootDir>/tests/hls.test.js"
+        ]
+      },
+      {
+        "displayName": "jsdom",
+        "testEnvironment": "jest-environment-jsdom",
+        "testMatch": [
+          "<rootDir>/tests/content.inject.test.js"
+        ]
+      }
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2",
+    "jsdom": "^30.1.3",
+    "mux.js": "^7.0.3"
+  }
+}
