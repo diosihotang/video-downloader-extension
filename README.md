@@ -1,4 +1,4 @@
-# Video Downloader Pro 
+# Video Downloader
 
 Chrome extension for detecting and downloading videos from any website — inspired by yt-dlp and Video DownloadHelper.
 
